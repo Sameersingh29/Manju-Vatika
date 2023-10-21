@@ -1,0 +1,125 @@
+*{
+    margin:0;
+}
+body{
+    background-color: maroon;
+    color: #DFB722 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Navigation bar*/
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: coral;
+    z-index: 1;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid black;
+  }
+  
+  .topnav a:hover {
+    background-color: maroon;
+    color: #DFB722;
+  }
+  
+  .topnav a.active {
+    background-color: maroon;
+    color: #DFB722;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+/*Navbar ends*/
+
+/*Used to make links black*/
+.facebook{
+    color: black;
+    text-decoration:underline;
+}
+/*Logo*/
+img{
+    width:18px;
+}
+
+/*Location*/
+.location-box{
+    background-color: coral;
+    color: black;
+    width: 30%;
+    margin-top: 50px;
+    padding:50px;
+    text-align: left;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+/*Contact*/
+.contact-box{
+    background-color: coral;
+    color: black;
+    width: 30%;
+    margin-top: 50px;
+    padding:50px;
+    text-align: left;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 525px) {
+    .location-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 50px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 5px;
+    }
+    
+    .contact-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 25px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 0px;
+    }
+
+    .topnav {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+      padding-right: 0%;
+      z-index: 1;
+    }
+
+  .topnav a {
+      float: left;
+      display: inline;
+      padding: 12px 6px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+}

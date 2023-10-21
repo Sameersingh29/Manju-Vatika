@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a  href="file:///C:/Users/Sameer/Desktop/Manju%20vatika/Home_page.html">Home</a>
+    <a href="file:///C:/Users/Sameer/Desktop/Manju%20vatika/About_page.html">About Us</a>
+    <a href="#header" class="active">Gallery</a>
+    <a href="file:///C:/Users/Sameer/Desktop/Manju%20vatika/Services_page.html">Services</a>
+    <a href="file:///C:/Users/Sameer/Desktop/Manju%20vatika/Contact_page.html">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+    <section id="header">
+        <h1>Gallery</h1>
+    </section>
+
+    <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_stage_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Mandap_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_corridor_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Ashoka_hall_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Ashoka_gate_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_stage_2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_stage_3.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Ganga_hall_1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Ganga_hall_2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_corridor_2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="Main_corridor_3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="img_..jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Main_stage_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Mandap_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Main_corridor_1.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Ashoka_hall_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Ashoka_gate_1.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Main_stage_2.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(7)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Ganga_hall_1.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Ganga_hall_2.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Main_corridor_2.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Main_corridor_3.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_..jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+
+    <!--<section class="video">
+
+    </section>-->
+</body><br>
+<footer>
+  <script>// When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("myTopnav");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+}</script>
+</footer>
+</html>

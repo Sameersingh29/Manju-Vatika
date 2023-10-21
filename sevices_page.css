@@ -1,0 +1,373 @@
+h1{
+  font-family: 'Fleur De Leah', cursive;
+  text-align: center;
+  font-size: 500%;
+  padding-top: 45px;
+  padding-left: 10%;
+}
+
+*{
+  margin:0;
+}
+body{
+  padding-top: 0px;
+  background-color: maroon;
+  color: #DFB722 ;
+}
+
+/*Navigation bar*/
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  background-color: coral;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid black;
+}
+
+.topnav a:hover {
+  background-color: maroon;
+  color: #DFB722;
+}
+
+.topnav a.active {
+  background-color: maroon;
+  color: #DFB722;
+}
+
+.topnav .icon {
+  display: none;
+}
+/*Navbar ends*/
+
+/*Services-box*/
+.services-box{
+  background-color: coral;
+  color: black;
+  width: 50%;
+  margin-left: 570px;
+  padding:50px;
+  text-align: justify;
+  font-size:25px;
+  border-radius: 5px;
+}
+h2{
+  font-family: 'Sail', cursive;
+}
+h3{
+  font-family: 'Sail', cursive;
+}
+img{
+  width:40%;
+  border-radius: 6px;
+  float: right;
+  margin-left: 20px;
+  border: 2px solid black;
+}
+
+/*Location box*/
+.location-box{
+  position: absolute;
+  top: 1000px;
+  float: left;
+  background-color: coral;
+  color: black;
+  width: 30%;
+  margin: 0px;
+  padding:50px;
+  text-align: left;
+  font-size:18px;
+  border-radius: 5px;
+}
+
+/*Covers headings of both loction and contact box*/
+#heads{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Contact box*/
+.contact-box{
+  position: absolute;
+  top: 1400px;
+  float: left bottom;
+  background-color: coral;
+  color: black;
+  width: 30%;
+  margin: 0px;
+  padding:50px;
+  text-align: left;
+  font-size:18px;
+  border-radius: 5px;
+}
+
+.logo{
+  float: none;
+  border: none;
+  width: 18px;
+}
+
+/*makes links black*/
+.facebook{
+  color: black;
+  text-decoration:underline;
+}
+
+@media screen and (max-width: 380px) {
+  .services-box{
+    background-color: coral;
+    color: black;
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 0;
+    padding:25px;
+    text-align: justify;
+    font-size:18px;
+    border-radius: 5px;
+  }
+
+  .location-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-bottom: 0px;
+      padding:25px;
+      text-align: left;
+      font-size:18px;
+      border-radius: 5px;
+  }
+  
+  .contact-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 280px;
+      padding:25px;
+      text-align: left;
+      font-size:18px;
+      border-radius: 0px;
+  }
+
+  .topnav {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+      padding-right: 7%;
+      z-index: 1;
+    }
+
+  .topnav a {
+      float: left;
+      display: inline;
+      padding: 12px 6px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 576px){
+
+  .services-box{
+    background-color: coral;
+    color: black;
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 0;
+    padding:25px;
+    text-align: justify;
+    font-size:18px;
+    border-radius: 5px;
+  }
+
+  .location-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 5px;
+      padding:25px;
+      text-align: left;
+      font-size:18px;
+      border-radius: 5px;
+  }
+  
+  .contact-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 280px;
+      margin-left: 0;
+      padding:25px;
+      text-align: left;
+      font-size:18px;
+      border-radius: 0px;
+  }
+
+  .topnav {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+      padding-right: 7%;
+      z-index: 1;
+    }
+
+  .topnav a {
+      float: left;
+      display: inline;
+      padding: 8px 10px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+  .services-box{
+    background-color: coral;
+    color: black;
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 0;
+    padding:25px;
+    text-align: justify;
+    font-size:22px;
+    border-radius: 5px;
+    padding-bottom: 7%;
+  }
+
+  .location-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 5px;
+      padding:25px;
+      text-align: left;
+      font-size:20px;
+      border-radius: 5px;
+  }
+  
+  .contact-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 320px;
+      margin-left: 0;
+      padding:25px;
+      text-align: left;
+      font-size:20px;
+      border-radius: 0px;
+  }
+
+  .topnav {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+      padding-right: 7%;
+      z-index: 1;
+    }
+
+  .topnav a {
+      float: left;
+      display: inline;
+      padding: 8px 10px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+ 
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .services-box{
+    background-color: coral;
+    color: black;
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 0;
+    padding:25px;
+    text-align: justify;
+    font-size:26px;
+    border-radius: 5px;
+    padding-bottom: 5%;
+  }
+
+  .location-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 5px;
+      padding:25px;
+      text-align: left;
+      font-size:24px;
+      border-radius: 5px;
+  }
+  
+  .contact-box{
+      position: static;
+      background-color: coral;
+      color: black;
+      width: 100%;
+      margin-top: 370px;
+      margin-left: 0;
+      padding:25px;
+      text-align: left;
+      font-size:24px;
+      border-radius: 0px;
+  }
+
+  .topnav {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+      padding-right: 7%;
+      z-index: 1;
+    }
+
+  .topnav a {
+      float: left;
+      display: inline;
+      padding: 15px 10px;
+      text-decoration: none;
+      font-size: 20px;
+    } 
+
+    img{
+      width:30%;
+      border-radius: 6px;
+      float: right;
+      margin-left: 20px;
+      border: 2px solid black;
+    }
+
+    h2{
+      font-size:200%;
+    }
+
+    h3{
+      font-size: 185%;
+    }
+}

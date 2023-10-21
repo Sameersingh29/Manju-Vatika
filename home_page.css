@@ -1,0 +1,438 @@
+*{
+    margin:0;
+}
+/*Navigation bar*/
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: coral;
+    z-index: 1;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid black;
+  }
+  
+  .topnav a:hover {
+    background-color: maroon;
+    color: #DFB722;
+  }
+  
+  .topnav a.active {
+    background-color: maroon;
+    color: #DFB722;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+
+/*"We welcome" text*/
+  .cursive{
+    font-family: 'Merienda', serif;
+    font-size: 20px;
+}
+
+/*Manju Vatika text*/
+.top-class{
+    font-family: 'Sail', sans-serif;
+    font-size: 100px;
+}
+
+body{
+    padding-top: 20px;
+    background-color: maroon;
+    color: #DFB722 ;
+}
+/*Contains top-class and cursive*/
+#header{
+    text-align: center;
+}
+
+/*Used t make links black*/
+.facebook{                                              
+    color: black;
+    text-decoration:underline;
+}
+
+/*For logos*/
+img{
+    width:18px;
+}
+
+/*Welcome section*/
+.welcome-box{
+    position: static;
+    background-color: coral;
+    color: black;
+    width: 50%;
+    margin-left: 600px;
+    padding:50px;
+    text-align: justify;
+    font-size:25px;
+    border-radius: 5px;
+}
+
+#welcome-head{
+    text-align: center;
+}
+
+#img1{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*Location section*/
+.location-box{
+    position: absolute;
+    top: 1000px;
+    float: left;
+    background-color: coral;
+    color: black;
+    width: 30%;
+    margin: 0px;
+    padding:50px;
+    text-align: left;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+#heads{
+    text-align: center;
+}
+/*Contact section*/
+.contact-box{
+    position: absolute;
+    top: 1400px;
+    float: left bottom;
+    background-color: coral;
+    color: black;
+    width: 30%;
+    margin: 0px;
+    padding:50px;
+    text-align: left;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+/*Sldeshow section starts*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 14%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*Slideshow section ends*/
+
+/*Media queries*/
+@media screen and (max-width: 380px) {
+    .welcome-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding:25px;
+        text-align: justify;
+        font-size:20px;
+        border-radius: 5px;
+    }
+
+    .location-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    .contact-box{
+        position:static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 0px;
+        margin-top: 280px;
+    }
+
+    .topnav {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 5%;
+        padding-right: 7%;
+        z-index: 1;
+      }
+
+    .topnav a {
+        float: left;
+        display: inline;
+        padding: 12px 6px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #header{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 576px){
+
+    .welcome-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding:25px;
+        text-align: justify;
+        font-size:18px;
+        border-radius: 5px;
+    }
+
+    .location-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 5px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 5px;
+    }
+    
+    .contact-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 280px;
+        padding:25px;
+        text-align: left;
+        font-size:18px;
+        border-radius: 0px;
+    }
+
+    .topnav {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 0%;
+        padding-right: 7%;
+        z-index: 1;
+      }
+
+    .topnav a {
+        float: left;
+        display: inline;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #header{
+        margin-left: 10%;
+    }
+      
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .welcome-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding:25px;
+        text-align: justify;
+        font-size:22px;
+        border-radius: 5px;
+    }
+
+    .location-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 5px;
+        padding:25px;
+        text-align: left;
+        font-size:20px;
+        border-radius: 5px;
+    }
+    
+    .contact-box{
+        position: absolute;
+        top: 2025px;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin-top: 10px;
+        padding:25px;
+        text-align: left;
+        font-size:20px;
+        border-radius: 0px;
+    }
+
+    .topnav {
+        width: 100%;
+        overflow: hidden;
+        padding-right: 7%;
+        z-index: 1;
+      }
+
+    .topnav a {
+        float: left;
+        display: inline;
+        padding: 15px 10px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      #header{
+        margin-left: 10%;
+    }
+
+    .slideshow-container{
+        margin-left: 7%;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .welcome-box{
+        position: static;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding:25px;
+        text-align: justify;
+        font-size:22px;
+        border-radius: 5px;
+    }
+
+    .location-box{
+        position: absolute;
+        top: 1975px;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0px;
+        padding:25px;
+        text-align: left;
+        font-size:20px;
+        border-radius: 5px;
+    }
+    
+    .contact-box{
+        position: absolute;
+        top: 2275px;
+        background-color: coral;
+        color: black;
+        width: 100%;
+        margin: 0px;
+        padding:25px;
+        text-align: left;
+        font-size:20px;
+        border-radius: 0px;
+    }
+
+    .topnav {
+        width: 100%;
+        overflow: hidden;
+        padding-right: 7%;
+        z-index: 1;
+      }
+
+    .topnav a {
+        float: left;
+        display: inline;
+        padding: 15px 10px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      #header{
+        margin-left: 10%;
+    }
+
+    .slideshow-container{
+        margin-left: 7%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1400px){
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+    padding-right: 18%;
+    z-index: 1;
+  }
+
+.topnav a {
+    float: left;
+    display: inline;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
